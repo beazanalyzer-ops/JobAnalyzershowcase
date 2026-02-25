@@ -1,6 +1,6 @@
 # 🧾 Job Analyzer — Ontario Job Posting Compliance Tool
 
-> Instantly check if a job posting meets Ontario's 2026 Pay Transparency & Job Posting Requirements.
+> Instantly check if a job posting meets Ontario's 2026 Job Posting Requirements.
 
 🔗 **Live App:** [www.beazatwork.com](https://www.beazatwork.com)
 
@@ -40,7 +40,7 @@ User pastes job description
         ↓
 FastAPI backend analyzes it against Ontario 2026 requirements
         ↓
-Returns: Score / Verdict / Missing Items
+Returns: Score / Verdict / Missing Requirements
         ↓
 Displayed instantly on beazatwork.com
 ```
