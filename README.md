@@ -21,15 +21,28 @@
 
 ## What It Does
 
-Ontario's new 2026 job posting law requires employers to include specific information in every job posting. Most job seekers don't know what's missing — and most postings fall short.
+Ontario's 2026 job posting law requires employers to include specific information in every job posting. Most job seekers don't know what's missing — and most postings fall short.
 
 **Job Analyzer** lets you paste any job description and instantly find out:
 
 - ✅ **Compliance Score** — out of 100
-- 📋 **Verdict** — a one-sentence plain-language summary
-- 🔍 **Missing Requirements** — a clear list of what the employer left out
+- 📋 **Verdict** — a plain-language summary of the result
+- 🔍 **Missing Requirements** — exactly what the employer left out
+- 💡 **Recommendations** — actionable guidance based on your plan
 
-When you're done, click **Analyze Another Job** to start fresh.
+Access is tiered. All users get a compliance score. Paid plans unlock the full report.
+
+---
+
+## Plans
+
+| Plan | Type | What You Get |
+|---|---|---|
+| Free | Free | Compliance score only |
+| Quick Report | One-time | Score + verdict + missing requirements |
+| Full Report | Subscription | Everything + JS recommendations |
+| JD Template | One-time | B2B compliant job description template |
+| Compliance Kit | Subscription | Full B2B suite + recommendations |
 
 ---
 
@@ -38,9 +51,11 @@ When you're done, click **Analyze Another Job** to start fresh.
 ```
 User pastes job description
         ↓
-FastAPI backend analyzes it against Ontario 2026 requirements
+FastAPI backend analyzes against Ontario 2026 requirements
         ↓
-Returns: Score / Verdict / Missing Requirements
+Returns: Score / Verdict / Missing Requirements / Recommendations
+        ↓
+Tier checked — user sees what their plan unlocks
         ↓
 Displayed instantly on beazatwork.com
 ```
@@ -53,6 +68,9 @@ Displayed instantly on beazatwork.com
 |---|---|
 | Frontend | WordPress + Custom Plugin |
 | Backend | FastAPI (Python) |
+| Database | PostgreSQL |
+| Authentication | Clerk (Google SSO) |
+| Payments | Stripe |
 | Deployment | Railway |
 | Target Regulation | Ontario Employment Standards — Job Posting Law 2026 |
 
@@ -71,4 +89,4 @@ For licensing, partnership, or integration inquiries, please reach out via [www.
 
 ---
 
-*Built by a project manager turned developer, passionate about technology, learning Python, and making Ontario's employment laws accessible to everyday job seekers.*
+*Built by a project manager turned developer / AI‑augmented product manager, passionate about technology, learning Python, and making Ontario's employment laws accessible to everyday job seekers and employers.*
